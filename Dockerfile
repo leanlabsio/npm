@@ -11,7 +11,5 @@ RUN apk add --update \
     npm config set cache-min 100000000 --global && \
     rm -rf /var/cache/apk/*
 
-ENTRYPOINT ["/bin/sh", "-c"]
-
 VOLUME ["/data", "/cache"]
 WORKDIR /data
