@@ -6,7 +6,7 @@ RUN apk add --update \
         python \
         make \
         g++ && \
-    npm install -g bower grunt-cli node-gyp && \
+    npm install -g node-gyp && \
     npm config set cache "/cache/npm" --global && \
     npm config set cache-min 100000000 --global && \
     rm -rf /var/cache/apk/*
