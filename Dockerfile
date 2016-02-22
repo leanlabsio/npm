@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.3
 
 RUN apk add --update \
         git \
@@ -11,5 +11,6 @@ RUN apk add --update \
     npm config set cache-min 100000000 --global && \
     rm -rf /var/cache/apk/*
 
-VOLUME ["/data", "/cache"]
-WORKDIR /data
+COPY ./entry.sh /entry.sh
+
+ENTRYPOINT ["/entry.sh"]
