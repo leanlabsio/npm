@@ -1,5 +1,7 @@
 # npm builder
 
+[![](https://badge.imagelayers.io/leanlabs/npm:latest.svg)](https://imagelayers.io/?images=leanlabs/npm:latest 'Get your own badge on imagelayers.io')
+
 ### Usage
 
 ```bash
