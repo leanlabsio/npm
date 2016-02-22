@@ -1,12 +1,11 @@
-# nodejs-grunt-bower
+# npm builder
 
 ### Usage
 
 ```bash
-docker run --rm -v `pwd`:/data -v $HOME/.node-cache:/cache leanlabs/nodejs-grunt-bower npm install
+docker run --rm \
+    -v `pwd`:/`pwd` \
+    -v $HOME/.node-cache:/cache 
+    -w `pwd` \
+    leanlabs/npm npm install
 ```
-
-```bash
-docker run --rm -v `pwd`:/data -v $HOME/.node-cache:/cache leanlabs/nodejs-grunt-bower bower install --allow-root
-```
-
